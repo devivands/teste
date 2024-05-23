@@ -1,0 +1,96 @@
+body{
+  background-image: url(imgs-pagina1/Landing\ Page.png); /* Imagem de fundo do bulbassar*/
+  background-repeat: no-repeat; /*Para não repetir a imagem e deixar apenas uma e depois preencher no cover abaixo*/
+  background-size: cover;
+  overflow-x: hidden; /*bloqueia a rolagem horizontal e vertical*/
+  overflow-y: hidden;
+}
+/*MENU DO JOGO*/
+.botoes {
+  
+  display: flex; /* Tornar os botões um flex container */
+  justify-content: center; /* Centralizar horizontalmente o conteúdo */
+  align-items: center; /* Centralizar verticalmente o conteúdo */
+  border: none;
+  padding: 27px 240px; /* Ajustando o padding conforme necessário */
+  border-radius: 50px ;
+  color: rgb(255, 255, 255);
+  background-color: #2a383f;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 200px; /* Definindo uma largura fixa para os botões */
+  margin-bottom:12px;
+  font-size: 30px;
+   
+}
+.menu{ 
+  width: 100vw;
+  height:18vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 90px;
+}
+/*TEXTOS DA PAGINA INICIAL*/
+.container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.container .text h1{
+  color: white;
+  max-width: 600px;
+  margin-right: 20px;
+  font-size: 100px;
+  display:inline;
+  padding: 20px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5), -1px -3px 2px rgba(0, 0, 0, 0.7);
+  
+
+}
+.container .text h2{
+  color: white;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 21px;
+  text-indent: 30px; /*move o texto para o lado*/
+  text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5), -1px -3px 2px rgba(0, 0, 0, 0.7); /*sombra do texto tanto no h1 quanto no h2 são a mesma, provavelmente a mesma no p também*/
+}
+.container .text p{
+  width: 350px; /* Ajuste este valor conforme necessário */
+  word-wrap: break-word;
+  white-space: normal;
+  padding-left: 30px;/*esta movendo o texto para o lado pois aqui o texto esta quebrado*/
+  font-size: 20px; /* Ajuste o tamanho da fonte conforme necessário */
+  line-height: 1.5; /* Ajuste o espaçamento entre linhas conforme necessário */  
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5), -1px -3px 2px rgba(0, 0, 0, 0.7); /*sombra do texto tanto no h1 quanto no h2 são a mesma, provavelmente a mesma no p também*/
+}
+/*PARTE DO GIF PAGINA INICIAL*/
+.circle-container {
+  width: 340px; /* Defina o tamanho do contêiner do círculo */
+  height: 340px; /* Defina o tamanho do contêiner do círculo */
+  border-radius: 50%; /* Torna o contêiner do círculo redondo */
+  background-color: #000; /* Cor de fundo do círculo (opcional) */
+  display: flex; /* Define o contêiner como um flex container */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  position: absolute; /* Posicionamento absoluto */
+  top: 40%; /* Ajuste este valor para mover o GIF para cima */
+  left: 73%; /* Centraliza horizontalmente */
+  overflow: hidden; /* Garante que o GIF não ultrapasse os limites do contêiner */
+}
+
+.circle-img {
+  width: 100%; /* Garante que a imagem do GIF preencha o contêiner do círculo */
+  height: 100%; /* Garante que a imagem do GIF preencha o contêiner do círculo */
+  object-fit: cover; /* Garante que a imagem preencha o contêiner sem distorcer */
+  border-radius: 50%; /* Torna a imagem redonda */
+  
+}
+  

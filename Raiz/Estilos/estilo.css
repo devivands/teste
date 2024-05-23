@@ -1,0 +1,91 @@
+body{
+  background: linear-gradient(to right, #ffffff, hsl(103, 100%, 92%)); /* Gradiente horizontal */
+  height: 1550vh; /* Garante que o gradiente cubra toda a altura da janela */
+  /* Imagem de fundo do bulbassar*/
+  background-repeat: no-repeat; /*Para não repetir a imagem e deixar apenas uma e depois preencher no cover abaixo*/
+  background-size: cover;
+  overflow-x: hidden; /*bloqueia a rolagem horizontal e vertical*/
+  overflow-y:scroll;
+  
+}
+/* Estilos para a navegação */
+nav {
+  background-color: #2a383f;
+  overflow: hidden;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  transition: background-color 0.4s;
+  font-size: 23px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+nav ul li a:hover {
+  background-color: #797878;
+}
+#tituloprincipal{
+  font-size: 50px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p{
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+}
+h1{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px;
+}
+h2{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px;
+  text-align: center;
+}
+/* Estilos para o container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Garante que o container cubra toda a largura da janela */
+}
+
+/* Estilos para o botão */
+.center-button {
+  padding: 15px 30px;
+  font-size: 18px;
+  color: white;
+  background-color: #2a383f;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.center-button:hover {
+  background-color:  hsl(80, 3%, 21%);
+  transform: scale(1.1);
+  margin-bottom: 300px;
+
+}
+li{
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
