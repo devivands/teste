@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Raiz/Estilos/styles.css">
+  <title>Biopokémonlogia</title>
+</head>
+<body>
+  
+  <div class="container">
+
+    <div class="text">
+        <h1>BIOPOKÉMOLOGIA</h1>
+        <h2>Um jogo direto do mundo virtual para o real</h1>
+        <p>Bem-vindo ao mundo emocionante de Biopoké: Explorando a Vida Pokémon! Neste jogo inovador, mergulhe em uma aventura que combina a fascinante biologia do mundo real com os incríveis Pokémon que todos nós conhecemos e amamos.
+    Prepare-se para uma jornada educativa e divertida, onde você se tornará um verdadeiro mestre Pokémon e biólogo.</p>
+    </div>
+  </div>
+    <div class="menu">
+        <button id="meuBotao" class="botoes">Jogar</button>
+        <button id="meuBotao2" class="botoes">Poképedia</button>
+        <button id="meuBotao3" class="botoes">Créditos</button>
+
+    <div class="circle-container"> 
+       <img src="pokémon-detective-pikachu-searching.gif" alt="" class="circle-img">
+    </div>
+        
+    </div>
+    
+  <script src="Raiz/Scripts/index.js"></script>
+</body>
+</html>
