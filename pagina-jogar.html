@@ -1,11 +1,39 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Destino</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Game</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>EM DESENVOLVIMENTO</h1>
+  <div class="container">
+    <h1>Perguntas</h1>
+    <div id="start-container">
+      <button id="start-btn" class="btn">Iniciar Quiz</button>
+    </div>
+    <div id="quiz-container" class="hide">
+      <div id="card-container">
+        <img id="card-image" src="" alt="Card Image" class="card-image">
+        <p id="card-description"></p>
+        <button id="next-card-btn" class="btn">Próxima Carta</button>
+      </div>
+      <div id="question-container" class="hide">
+        <h2 id="question"></h2>
+        <div id="answer-buttons" class="btn-grid">
+          <!-- Aqui serão adicionados os botões de resposta dinamicamente -->
+        </div>
+      </div>
+      <div id="controls">
+        <button id="next-question-btn" class="btn hide">Próxima Pergunta</button>
+      </div>
+      <div id="feedback-message" class="hide"></div>
+    </div>
+    <div id="score-container" class="hide">
+      <h2>Sua Pontuação: <span id="score"></span></h2>
+      <h2>Erros: <span id="errors"></span></h2>
+    </div>
+  </div>
+  <script src="script2.js"></script>
 </body>
 </html>
