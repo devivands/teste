@@ -7,14 +7,21 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <nav>
+    <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="pagina-pokepedia.html">Pokepedia</a></li>
+        <li><a href="pagina-creditos.html">Créditos</a></li>
+    </ul>
+</nav>
   <div class="container">
-    <h1>Perguntas</h1>
+    <h1>Ecologia e Pokémon: Interações e Cadeias Alimentares do Mundo Pokémon ao Real</h1>
     <div id="start-container">
       <button id="start-btn" class="btn">Iniciar Quiz</button>
     </div>
     <div id="quiz-container" class="hide">
       <div id="card-container">
-        <img id="card-image" src="" alt="Card Image" class="card-image">
+        <div id="card-images" class="card-images"></div>
         <p id="card-description"></p>
         <button id="next-card-btn" class="btn">Próxima Carta</button>
       </div>
@@ -30,7 +37,7 @@
       <div id="feedback-message" class="hide"></div>
     </div>
     <div id="score-container" class="hide">
-      <h2>Sua Pontuação: <span id="score"></span></h2>
+      <h2>Acertos: <span id="score"></span></h2>
       <h2>Erros: <span id="errors"></span></h2>
     </div>
   </div>

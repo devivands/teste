@@ -1,66 +1,68 @@
 const cards = [
-    { image: 'images/card1.jpeg', description: 'Imagem 1' },
-    { image: 'images/card2.jpeg', description: 'Imagem 2' },
-    { image: 'images/card3.jpeg', description: 'Imagem 3' },
-    { image: 'images/card4.jpeg', description: 'Imagem 4' },
-    { image: 'images/card5.jpeg', description: 'Imagem 5' },
-    { image: 'images/card6.jpeg', description: 'Imagem 6' },
-    { image: 'images/card7.jpeg', description: 'Imagem 7' },
-    { image: 'images/card8.jpeg', description: 'Imagem 8' },
-    { image: 'images/card9.jpeg', description: 'Imagem 9' },
-    { image: 'images/card10.jpeg', description: 'Imagem 10' }
+    { image: 'images/card1.jpeg', description: '' },
+    { image: 'images/card2.jpeg', description: '' },
+    { image: 'images/card3.jpeg', description: '' },
+    { image: 'images/card4.jpeg', description: '' },
+    { image: 'images/card5.jpeg', description: '' },
+    { image: 'images/card6.jpeg', description: '' },
+    { image: 'images/card7.jpeg', description: '' },
+    { image: 'images/card8.jpeg', description: '' },
+    { images: ['images/card9_1.jpeg', 'images/card9_2.jpeg', 'images/card9_3.jpeg'], description: '' },
+    { images: ['images/card10_1.jpeg', 'images/card10_2.jpeg', 'images/card10_3.jpeg'], description: '' }
 ];
 
 const questions = [
     {
-        question: '1 As plantas produzem seu próprio alimento, através de um processo fotoquímico. Com a imagem, que nível trópico se encontra?',
+        question: ' As plantas produzem seu próprio alimento, através de um processo fotoquímico. Com a imagem, que nível trópico se encontra?',
         answers: ['Consumidor', 'Decompositor', 'Produtor', 'Herbívoro'],
         correctAnswer: 'Produtor'
     },
     {
-        question: '2 Sabendo que esse Pokémon é um peixe, podemos classificar ele em qual nível trópico ele se encontra?',
+        question: ' Sabendo que esse Pokémon é um peixe, podemos classificar ele em qual nível trópico ele se encontra?',
         answers: ['Consumidor Primário', 'Consumidor Secundário', 'Consumidor Terciário', 'Consumidor Quartenario'],
         correctAnswer: 'Consumidor Terciário'
     },
     {
-        question: '3 Sabendo que esse pokemon é uma foca, conseguimos classificar ele em um nível trópico, sendo ele um:',
+        question: ' Sabendo que esse pokemon é uma foca, conseguimos classificar ele em um nível trópico, sendo ele um:',
         answers: ['Consumidor Primário', 'Consumidor Secundário', 'Consumidor Terciário', 'Consumidor Quartenario'],
         correctAnswer: 'Consumidor Terciário'
     },
     {
-        question: '4 A partir da imagem, pode se considerar esse pokemon como um polvo, sabendo disso, classifique o em seu nivel trópico',
+        question: ' A partir da imagem, pode se considerar esse pokemon como um polvo, sabendo disso, classifique o em seu nivel trópico',
         answers: ['Consumidor Primário', 'Consumidor Secundário', 'Consumidor Terciário', 'Consumidor Quartenario'],
         correctAnswer: 'Consumidor Secundário'
     },
     {
-        question: '5 Observe a imagem, a partir dela, classifique esse pokemon em seu nivel trópico',
+        question: ' Observe a imagem, a partir dela, classifique esse pokemon em seu nivel trópico',
         answers: ['Consumidor Primário', 'Consumidor Secundário', 'Consumidor Terciário', 'Consumidor Quartenario'],
         correctAnswer: 'Consumidor Primário'
     },
     {
-        question: '6 Sabendo que está planta é carnívora, qual nível trófico ela se encaixa?',
+        question: ' Sabendo que está planta é carnívora, qual nível trófico ela se encaixa?',
         answers: ['Produtor', 'Consumidor Primário', 'Consumidor Secundário', 'Decompositor'],
         correctAnswer: 'Consumidor Primário'
     },
     {
-        question: '7 Nesta imagem podemos observar um parasita e um animal, considerando os níveis tróficos, o parasita seria um decompositor?',
+        question: ' Nesta imagem podemos observar um parasita e um animal, considerando os níveis tróficos, o parasita seria um decompositor?',
         answers: ['Verdadeiro', 'Falso'],
         correctAnswer: 'Verdadeiro'
     },
     {
-        question: '8 Observando esse moluco na imagem, em qual nível trópico ele pertence, sabendo que ele também se alimenta de algas',
+        question: ' Observando esse moluco na imagem, em qual nível trópico ele pertence, sabendo que ele também se alimenta de algas',
         answers: ['Consumidor Primário', 'Consumidor Secundário', 'Consumidor Terciário', 'Consumidor Quartenario'],
         correctAnswer: 'Consumidor Secundário'
     },
     {
-        question: '9 Observando as características destes 3 humanoide, que nivel trópico eles pertencem?',
+        question: ' Observando as características destes 3 humanoide, que nivel trópico eles pertencem?',
         answers: ['Consumidor Primário', 'Consumidor Secundário', 'Consumidor Terciário', 'Decompositor'],
-        correctAnswer: 'Consumidor Terciário'
+        correctAnswer: 'Consumidor Terciário',
+        imageClass: 'large-image'
     },
     {
-        question: '10 Observando a cadeia alimentar, qual a sequência correta?',
+        question: ' Observando a cadeia alimentar, qual a sequência correta?',
         answers: ['Consumidor, Produtor e Decompositor', 'Decompositor, Consumidor e Produtor primário', 'Consumidor Primário, Secundário e Terciário', 'Herbívoro, Carnívoro e onívoro'],
-        correctAnswer: 'Consumidor Primário, Secundário e Terciário'
+        correctAnswer: 'Consumidor Primário, Secundário e Terciário',
+        imageClass: 'large-image'
     },
     // Adicione mais perguntas conforme necessário
 ];
@@ -69,7 +71,7 @@ let currentCardIndex = 0;
 let currentQuestionIndex = 0;
 let cardsShown = 0;
 
-const cardImageElement = document.getElementById('card-image');
+const cardImagesElement = document.getElementById('card-images');
 const cardDescriptionElement = document.getElementById('card-description');
 const nextCardButton = document.getElementById('next-card-btn');
 
@@ -114,7 +116,25 @@ function showNextQuestion() {
 
 function showCard(card) {
     console.log('showCard called', card);
-    cardImageElement.src = card.image;
+    cardImagesElement.innerHTML = ''; // Limpa as imagens anteriores
+    if (Array.isArray(card.images)) {
+        card.images.forEach(imgSrc => {
+            const imgElement = document.createElement('img');
+            imgElement.src = imgSrc;
+            cardImagesElement.appendChild(imgElement);
+        });
+    } else {
+        const imgElement = document.createElement('img');
+        imgElement.src = card.image;
+        cardImagesElement.appendChild(imgElement);
+    }
+
+    if (card.imageClass) {
+        cardImagesElement.classList.add(card.imageClass);
+    } else {
+        cardImagesElement.classList.remove('large-image');
+    }
+
     cardDescriptionElement.innerText = card.description;
     questionContainerElement.classList.add('hide');
     nextCardButton.classList.remove('hide');
@@ -182,7 +202,6 @@ function showScore() {
     nextQuestionButton.classList.add('hide');
 }
 
-// Adicione uma função para iniciar o quiz se necessário
 document.getElementById('start-btn').addEventListener('click', () => {
     document.getElementById('start-container').classList.add('hide');
     document.getElementById('quiz-container').classList.remove('hide');

@@ -23,6 +23,11 @@ body{
   font-size: 30px;
    
 }
+.botoes:hover{
+  background-color: #71b929;
+  transform: scale(1.1);
+  margin-bottom: 20px;
+}
 .menu{ 
   width: 100vw;
   height:18vh;
