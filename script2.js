@@ -180,12 +180,7 @@ const cards = [
   function selectAnswer(selectedButton, correctAnswer, explanation) {
     const isCorrect = selectedButton.innerText === correctAnswer;
     setStatusClass(selectedButton, isCorrect);
-    Array.from(answerButtonsElement.children).forEach(button => {
-      if (button.innerText === correctAnswer) {
-        button.classList.add('correct-answer');
-      }
-    });
-  
+    
     if (isCorrect) {
       if (attempts === 0) {
         score += 1;
@@ -200,6 +195,11 @@ const cards = [
       feedbackMessage.classList.remove('hide');
       nextQuestionButton.classList.remove('hide');
       attempts = 0; // Reset attempts for the next question
+      
+      // Desabilitar todos os botões após a resposta correta
+      Array.from(answerButtonsElement.children).forEach(button => {
+        button.disabled = true;
+      });
     } else {
       attempts++;
       feedbackMessage.innerText = `Resposta incorreta. ${explanation}`;
@@ -213,6 +213,8 @@ const cards = [
   
     console.log(`Score: ${score.toFixed(2)}, Attempts: ${attempts}, Errors: ${errors}`);
   }
+  
+  
   
   
   
