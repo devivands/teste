@@ -4,8 +4,7 @@ body{
   /* Imagem de fundo do bulbassar*/
   background-repeat: no-repeat; /*Para não repetir a imagem e deixar apenas uma e depois preencher no cover abaixo*/
   background-size: cover;
-  overflow-x: hidden; /*bloqueia a rolagem horizontal e vertical*/
-  overflow-y:scroll;
+ 
   
 }
 /* Estilos para a navegação */
